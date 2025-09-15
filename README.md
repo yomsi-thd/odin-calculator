@@ -16,5 +16,5 @@ the operation is then calculated automatically and turned into a sum.
 Then, the sum is used for the calculation for the next operation.
 
 Whenever, the user wants to clear all of previous calculation, they can do the following
-- Press on the "Clear" button
+- Press on the `Clear` button
 - Press on another number after the previous operation is completed.
