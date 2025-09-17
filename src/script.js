@@ -44,9 +44,11 @@ numberButtons.forEach((numberButton) => numberButton.addEventListener("click", (
 operatorButtons.forEach((operatorButton) => operatorButton.addEventListener("click", () =>  populateDisplay(operatorButton.value)));
 
 function populateDisplay(buttonValue){
-    //Upon a button press, If the current display value is NOT "0", then the current display value should concatinate the 'just-pressed' button's value. 
-    if (display.value != DEFAULT_DISPLAY_VALUE){
-        display.value += buttonValue;
+    //Upon a button press, If the current display value is NOT the default value "0", then the current display value should concatinate the 'just-pressed' button's value; under the condition that the display doesn't contain an operator
+    if ((display.value != DEFAULT_DISPLAY_VALUE)){
+        if (!(/[+\-×÷]/.test(buttonValue) && /[+\-×÷]/.test(display.value))) {
+            display.value += buttonValue;
+        } 
     };
     //If the current display value is "0", the display value should be switched from "0" to the 'just-pressed' button's value. 
     //If the display was 0 and an operator was pressed instead of the number, it will not replace the number "0" and instead concatenate the operator to the number "0"
