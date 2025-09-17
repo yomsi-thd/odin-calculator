@@ -30,3 +30,4 @@ function operate(num1, num2, operator){
     }
 }
 
+//Funciton that populate the display when you click the buttons. It should be stored the content 
