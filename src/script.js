@@ -47,7 +47,7 @@ function populateDisplay(buttonValue){
     //Upon a button press, If the current display value is NOT "0", then the current display value should concatinate the 'just-pressed' button's value. 
     if (display.value != DEFAULT_DISPLAY_VALUE){
         display.value += buttonValue;
-    }
+    };
     //If the current display value is "0", the display value should be switched from "0" to the 'just-pressed' button's value. 
     //If the display was 0 and an operator was pressed instead of the number, it will not replace the number "0" and instead concatenate the operator to the number "0"
     if (display.value == DEFAULT_DISPLAY_VALUE){
@@ -60,7 +60,8 @@ function populateDisplay(buttonValue){
 }
 
 //Upon hitting the 'AC' clear button, the display should be resetted back to 0
-
+const clearButton = document.querySelector("#clear");
+clearButton.addEventListener("click", () => display.value = DEFAULT_DISPLAY_VALUE);
 
 
 //The display should only show 1 operator at a time and will not do 2 operations at the same time. 
