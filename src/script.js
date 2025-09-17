@@ -30,5 +30,7 @@ function operate(num1, num2, operator){
     }
 }
 
-//Function that populate the display when you click the buttons. It should be stored the content 
-
+//--Function that populate the display when you click the buttons. It should be stored the content --
+//Create event listeners for every "number" and "operator" button.
+//Each button contains a string value of that "number" or operator
+//By default, the 
