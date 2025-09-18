@@ -155,6 +155,9 @@ function multiply(num1, num2){
 };
 
 function divide(num1, num2){
+    if (num2 == 0){
+        return `Hey You Can't Do That :(`;
+    }
     return num1 / num2;
 };
 
@@ -178,10 +181,6 @@ function operate(number1, number2, operator){
 //The Display Encoder
 function populateDisplay(numberToBeDisplayed){
     display.value = numberToBeDisplayed;
-}
-
-function highlightButton(yesOrNo){
-
 }
 
 
