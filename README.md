@@ -37,4 +37,6 @@ This project's calculator contains the following:
 - The Display Encoder (a function that updates the screen)
 
 The following video below demonstrates how the calculator works in a nutshell with these components (except the ROM).
-![](./misc/howDoesACalculatorWork.mp4)
+
+https://github.com/user-attachments/assets/983d263a-efcf-4e42-9b8f-97fbb4ddc8bd
+
