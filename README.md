@@ -20,7 +20,7 @@ Whenever, the user wants to clear all of previous calculation, they can do the f
 - Press on another number after the previous operation is completed.
 
 
-The way that this calculator was coded, resemsbles *vaguely* how it works is similar to a real life calculator.
+The way that this calculator was coded, resembles *vaguely* how it works is similar to a real life calculator.
 
 This project's calculator contains the following:
 - The Display
