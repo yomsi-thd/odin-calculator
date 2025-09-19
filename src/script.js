@@ -107,9 +107,14 @@ function buttonsControler(buttonType, buttonValue){
 
             }
             else {
+                if (temporaryOperator == ""){
+                    temporaryOperator = buttonValue;
+                    break;
+                }
                 if (temporaryValue == ""){
                     break;
-                }else {
+                } 
+                else {
                     number2 = temporaryValue;
                     operator = temporaryOperator;
                     total = operate(number1, number2, operator);
@@ -202,6 +207,9 @@ function operate(number1, number2, operator){
 
 //The Display Encoder
 function populateDisplay(numberToBeDisplayed){
+    if (isNaN(numberToBeDisplayed) || isFinite(numberToBeDisplayed)){
+        display.value = "Hey! You can't do that!"
+    };
     display.value = numberToBeDisplayed;
 }
 
