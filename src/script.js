@@ -4,6 +4,7 @@ const display = document.querySelector(".display");
 
 //The Buttons
 const numberButtons = document.querySelectorAll(".number");
+const decimalPointButton = document.querySelector(".point");
 const operatorButtons = document.querySelectorAll(".operator");
 const equalButton = document.querySelector(".equal");
 const clearButton = document.querySelector(".clear");
@@ -40,6 +41,8 @@ function classifyButtonTypes(buttonValue){
             return "operator";
         case "=":
             return "equal";
+        case ".":
+            return "point";
         case "clear":
             return "clear";
     };
@@ -62,6 +65,13 @@ operatorButtons.forEach((button) => {
         populateDisplay(numberToBeDisplayed);
     })
 })
+decimalPointButton.addEventListener("click", () => {
+    let buttonValue = decimalPointButton.value;
+    let buttonType = classifyButtonTypes(buttonValue);
+    buttonsControler(buttonType, buttonValue);
+    populateDisplay(numberToBeDisplayed);
+});
+
 
 equalButton.addEventListener("click", () => {
     let buttonValue = equalButton.value;
@@ -108,6 +118,17 @@ function buttonsControler(buttonType, buttonValue){
                     number2 = "";
                     temporaryValue = "";
                 }
+            };
+            break;
+        case 'point':
+            if ((temporaryValue != "") && !(temporaryValue.includes("."))){
+                if (display.value == "0"){
+                    temporaryValue = display.value + '.';
+                    numberToBeDisplayed = temporaryValue;
+                } else{
+                    temporaryValue += '.';
+                    numberToBeDisplayed = temporaryValue;
+                };
             };
             break;
         case 'equal':
