@@ -96,11 +96,11 @@ function buttonsControler(buttonType, buttonValue){
             numberToBeDisplayed = temporaryValue;
             break;
         case 'operator':
-            temporaryOperator = buttonValue;
             if (number1 == ""){
                 if (temporaryValue != ""){
                     number1 = temporaryValue;
                     temporaryValue = "";
+                    temporaryOperator = buttonValue;
                 }else{
                     temporaryValue = "";
                 }
@@ -117,6 +117,7 @@ function buttonsControler(buttonType, buttonValue){
                     numberToBeDisplayed = total;
                     number2 = "";
                     temporaryValue = "";
+                    temporaryOperator = buttonValue;
                 }
             };
             break;
@@ -164,22 +165,22 @@ function buttonsControler(buttonType, buttonValue){
 
 //The ALU
 function add(num1 , num2){
-    return num1.plus(num2);
+    return num1.plus(num2).toString();
 };
 
 function subtract(num1, num2){
-    return num1.minus(num2);
+    return num1.minus(num2).toString();
 };
 
 function multiply(num1, num2){
-    return num1.times(num2);
+    return num1.times(num2).toString();
 };
 
 function divide(num1, num2){
     if (num2 == 0){
         return `Hey You Can't Do That :(`;
     }
-    return num1.div(num2);
+    return num1.div(num2).toString();
 };
 
 
