@@ -7,5 +7,69 @@ body{
 .calculator {
     width: 600px;
     height: 900px;
-    background-color: pink;
-};
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}
+
+.calculatorDisplayTop{
+    flex: 2;
+    display: flex;
+}
+
+.calculatorDisplayTop input, .calculatorNumberButtonsSection{
+    flex: 3;
+}
+
+.calculatorDisplayTop input{
+    font-size: 40px;
+}
+
+.calculatorDisplayTop .clear{
+    font-size: 50px;
+}
+
+.calculatorDisplayTop .clear, .calculatorOperatorButtonsSection{
+    flex: 1;
+    max-width: 145px;
+    flex-shrink: 0;
+}
+
+.calculatorButtonsSection{
+    flex: 8;
+    display: flex;
+}
+
+.calculatorNumberButtonsSection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.calculatorNumberButtonsSection div{
+    flex: 1;
+    display: flex;
+}
+
+.calculatorNumberButtonsSection div button{
+    font-size: 40px;
+    flex: 1;
+}
+
+.equal, .clear, .point{
+    background-color: mediumspringgreen;
+}
+
+.calculatorOperatorButtonsSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.calculatorOperatorButtonsSection button{
+    background-color: orange;
+    font-size: 50px;
+    flex: 1;
+}
+
+
