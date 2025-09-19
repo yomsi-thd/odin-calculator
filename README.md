@@ -18,3 +18,23 @@ Then, the sum is used for the calculation for the next operation.
 Whenever, the user wants to clear all of previous calculation, they can do the following
 - Press on the `Clear` button
 - Press on another number after the previous operation is completed.
+
+
+The way that this calculator was coded, resemsbles *vaguely* how it works is similar to a real life calculator.
+
+This project's calculator contains the following:
+- The Display
+- The Buttons of the following types
+	- Number
+	- Operator
+    - Decimal Point
+	- Equal
+	- Clear
+- The Encoder (helping the program understand which button is being pressed & its value)
+- The Controller (trafficking the data based on button presses)
+- The RAM (the variables)
+- The Arithmetic Logic Unit (The list of operation functions & 1 function named operate()')
+- The Display Encoder (a function that updates the screen)
+
+The following video below demonstrates how the calculator works in a nutshell with these components (except the ROM);
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rqTqWNakKKs?si=fuOatiDLLmN-cKy9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
