@@ -164,28 +164,28 @@ function buttonsControler(buttonType, buttonValue){
 
 //The ALU
 function add(num1 , num2){
-    return num1 + num2;
+    return num1.plus(num2);
 };
 
 function subtract(num1, num2){
-    return num1 - num2;
+    return num1.minus(num2);
 };
 
 function multiply(num1, num2){
-    return num1 * num2;
+    return num1.times(num2);
 };
 
 function divide(num1, num2){
     if (num2 == 0){
         return `Hey You Can't Do That :(`;
     }
-    return num1 / num2;
+    return num1.div(num2);
 };
 
 
 function operate(number1, number2, operator){
-    let num1 = Number(number1);
-    let num2 = Number(number2);
+    let num1 = Big(Number(number1));
+    let num2 = Big(Number(number2));
     switch (operator){
         case "+":
             return add(num1, num2);
