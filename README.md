@@ -36,5 +36,5 @@ This project's calculator contains the following:
 - The Arithmetic Logic Unit (The list of operation functions & 1 function named operate()')
 - The Display Encoder (a function that updates the screen)
 
-The following video below demonstrates how the calculator works in a nutshell with these components (except the ROM);
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rqTqWNakKKs?si=fuOatiDLLmN-cKy9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+The following video below demonstrates how the calculator works in a nutshell with these components (except the ROM).
+![](./misc/howDoesACalculatorWork.mp4)
